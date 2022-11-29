@@ -1,0 +1,25 @@
+
+import genericpath
+
+
+idade = int(input('Digite sua Idade:' ))
+if  idade <= 150:
+    print (('sua idade é'), (idade), ('anos'))
+if  idade > 150:
+    print ('informação invalida')
+    
+Salario = int(input('Digite o Seu Salario:' ))
+if Salario <= 0:
+    print ('Salario Invalido')
+if Salario > 0:
+    print (('Seu Salario é'), ('R$'), (Salario))
+
+    sexo = str(input('Digite o seu Sexo:' ))
+    if  sexo != ('masculino', 'femenino', 'outros'):
+        print (('seu sexo é' ), (sexo))
+    else:
+        print ('invalido')
+
+        
+     
+    

@@ -1,0 +1,71 @@
+pontos_sim1 = +0
+pontos_nao1 = +1
+
+for p in range(1,3):
+    print('{}ª Investigado'. format(p))
+
+    print ('Investigado', str(input('Nome do suspeito: ')))
+    Primeira_pergunta = str(input(' 1ª Mora perto da vitima ? ')).lower( ).replace( 'ã' , 'a' )
+    if Primeira_pergunta == (str('sim')):
+       soma_s1 = (pontos_sim1 + 1)
+       print (str(soma_s1))
+    elif Primeira_pergunta == (str('nao')):
+       soma_n1 = (pontos_nao1 + 0)
+       soma_s1 = (pontos_sim1 + 0)
+       print (str(soma_n1))
+    else:
+       print('codigo invalido')
+    
+    
+    Segunda_pergunta =  str(input(' 2ª ja trabalhou com a vitima ? ')).lower( ).replace( 'ã' , 'a' )
+    if Segunda_pergunta == (str('sim')):
+       soma_s2 = (pontos_sim1 + 1)
+       print (str(soma_s2))
+    elif Segunda_pergunta == (str('nao')):
+       soma_n2 = (pontos_nao1 + 0)
+       soma_s2 = (pontos_sim1 + 0)
+       print (str(soma_n2))
+    else:
+       print('codigo invalido')
+    
+    Terceira_pergunta = str(input(' 3ª telefonou para a vitima ? ')).lower( ).replace( 'ã' , 'a' )
+    if Terceira_pergunta == (str('sim')):
+        soma_s3 = (pontos_sim1 + 1)
+        print (str(soma_s3))
+    elif Terceira_pergunta == (str('nao')):
+        soma_n3 = (pontos_nao1 + 0)
+        soma_s3 = (pontos_sim1 + 0)
+        print (str(soma_n3))
+    else:
+        print('codigo invalido')
+    
+    
+    Quarta_pergunta = str(input(' 4ª esteve no local do crime ? ')).lower( ).replace( 'ã' , 'a' )
+    if Quarta_pergunta == (str('sim')):
+       soma_s4 = (pontos_sim1 + 1)
+       print (str(soma_s4))
+    elif Quarta_pergunta == (str('nao')):
+       soma_n4 = (pontos_nao1 + 0 )
+       soma_s4 = (pontos_sim1 + 0)
+       print (str(soma_n4))
+    else:
+       print('codigo invalido')
+    
+    
+    Quinta_pergunta =   str(input(' 5ª devia para a vitima ? ')).lower( ).replace( 'ã' , 'a' )
+    if Quinta_pergunta == (str('sim')):
+        soma_s5 = (pontos_sim1 + 1)
+        print (str(soma_s5))   
+    elif Quinta_pergunta == (str('nao')):
+       soma_n5 = (pontos_nao1 + 0)
+       soma_s5 = (pontos_sim1 + 0)
+       print (str(soma_n5))      
+    else:
+       print('codigo invalido')
+    
+    soma_totals = ((soma_s1) + (soma_s2) + (soma_s3) + (soma_s4) + (soma_s5))
+    print (soma_totals)
+    
+
+
+ 
