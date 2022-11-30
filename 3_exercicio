@@ -63,8 +63,21 @@ for p in range(1,3):
     else:
        print('codigo invalido')
     
+    print ('Resultado do Interrogatorio')
     soma_totals = ((soma_s1) + (soma_s2) + (soma_s3) + (soma_s4) + (soma_s5))
     print (soma_totals)
+    
+    if soma_totals == (5):
+           print('assasino')
+    elif soma_totals == (4):
+       print('cumplice')
+    elif soma_totals == (3):
+       print('cumplice')
+    elif soma_totals == (2):
+       print('suspeitos')
+    else:
+       print('Liberado')
+    
     
 
 
