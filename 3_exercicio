@@ -1,14 +1,12 @@
 pontos_sim1 = +0
 pontos_nao1 = +1
 
-for p in range(1,6):
+for p in range(1,4):
     print('A polícia considera que os suspeitos com 5 pontos são os assassinos, com 4 a 3 pontos são cúmplices e 2 pontos são apenas suspeitos, necessitando outras investigações. Valores iguais ou abaixo de 1 são liberados.')
-    
-    print('{}ª Investigado'. format(p))
-    
+    print('{}ª Investigado'. format(p))   
     print('Favor responder SIM ou NAO:')
-
     print ('Investigado - ', str(input('Nome do suspeito: ')))
+    
     Primeira_pergunta = str(input(' 1ª Mora perto da vitima ? ')).lower( ).replace( 'ã' , 'a' )
     if Primeira_pergunta == (str('sim')):
        soma_s1 = (pontos_sim1 + 1)
@@ -79,21 +77,21 @@ for p in range(1,6):
     print (('Quantidades de respostas SIM : '), (soma_totals ))
     
     if soma_totals == (5):
-       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a assasino/a')
+       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a ASSASSINO/a.')
     
     elif soma_totals == (4):
-       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a cumplice')
+       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a CUMPLICE.')
        
     elif soma_totals == (3):
-       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a cumplice')
+       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a CUMPLICE.')
        
     elif soma_totals == (2):
-       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a suspeito/a, é necessario outras investigacoes')
+       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a SUSPEITO/a, é necessario outras investigacoes.')
        
     else:
-       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela está Liberado/a')
+       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela está LBERADO/a.')
     
     
-
+    print('fim do {}ª Investigado'. format(p))
 
  
