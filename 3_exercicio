@@ -2,96 +2,96 @@ pontos_sim1 = +0
 pontos_nao1 = +1
 
 for p in range(1,4):
-    print('A polícia considera que os suspeitos com 5 pontos são os assassinos, com 4 a 3 pontos são cúmplices e 2 pontos são apenas suspeitos, necessitando outras investigações. Valores iguais ou abaixo de 1 são liberados.')
-    print('{}ª Investigado'. format(p))   
-    print('Favor responder SIM ou NAO:')
-    print ('Investigado - ', str(input('Nome do suspeito: ')))
+   print('A polícia considera que os suspeitos com 5 pontos são os assassinos, com 4 a 3 pontos são cúmplices e 2 pontos são apenas suspeitos, necessitando outras investigações. Valores iguais ou abaixo de 1 são liberados.')
+   print('{}ª Investigado'. format(p))   
+   print('Favor responder SIM ou NAO:')
+   print(str(input('Nome do suspeito: ')))
     
-    Primeira_pergunta = str(input(' 1ª Mora perto da vitima ? ')).lower( ).replace( 'ã' , 'a' )
-    if Primeira_pergunta == (str('sim')):
+   Primeira_pergunta = str(input(' 1ª Mora perto da vitima ? ')).lower( ).replace( 'ã' , 'a' )
+   if Primeira_pergunta == (str('sim')):
        soma_s1 = (pontos_sim1 + 1)
        
-    elif Primeira_pergunta == (str('nao')):
+   elif Primeira_pergunta == (str('nao')):
        soma_n1 = (pontos_nao1 + 0)
        soma_s1 = (pontos_sim1 + 0)
        
-    else:
+   else:
        print('codigo invalido')
        soma_s1 = (pontos_sim1 + 0)
     
     
-    Segunda_pergunta =  str(input(' 2ª ja trabalhou com a vitima ? ')).lower( ).replace( 'ã' , 'a' )
-    if Segunda_pergunta == (str('sim')):
+   Segunda_pergunta =  str(input(' 2ª ja trabalhou com a vitima ? ')).lower( ).replace( 'ã' , 'a' )
+   if Segunda_pergunta == (str('sim')):
        soma_s2 = (pontos_sim1 + 1)
        
-    elif Segunda_pergunta == (str('nao')):
+   elif Segunda_pergunta == (str('nao')):
        soma_n2 = (pontos_nao1 + 0)
        soma_s2 = (pontos_sim1 + 0)
     
-    else:
+   else:
        print('codigo invalido')
        soma_s2 = (pontos_sim1 + 0)
        
     
-    Terceira_pergunta = str(input(' 3ª telefonou para a vitima ? ')).lower( ).replace( 'ã' , 'a' )
-    if Terceira_pergunta == (str('sim')):
+   Terceira_pergunta = str(input(' 3ª telefonou para a vitima ? ')).lower( ).replace( 'ã' , 'a' )
+   if Terceira_pergunta == (str('sim')):
         soma_s3 = (pontos_sim1 + 1)
        
-    elif Terceira_pergunta == (str('nao')):
+   elif Terceira_pergunta == (str('nao')):
         soma_n3 = (pontos_nao1 + 0)
         soma_s3 = (pontos_sim1 + 0)
         
-    else:
+   else:
         print('codigo invalido')
         soma_s3 = (pontos_sim1 + 0)
     
     
-    Quarta_pergunta = str(input(' 4ª esteve no local do crime ? ')).lower( ).replace( 'ã' , 'a' )
-    if Quarta_pergunta == (str('sim')):
+   Quarta_pergunta = str(input(' 4ª esteve no local do crime ? ')).lower( ).replace( 'ã' , 'a' )
+   if Quarta_pergunta == (str('sim')):
        soma_s4 = (pontos_sim1 + 1)
        
-    elif Quarta_pergunta == (str('nao')):
+   elif Quarta_pergunta == (str('nao')):
        soma_n4 = (pontos_nao1 + 0 )
        soma_s4 = (pontos_sim1 + 0)
        
-    else:
+   else:
        print('codigo invalido')
        soma_s4 = (pontos_sim1 + 0)
     
     
-    Quinta_pergunta =   str(input(' 5ª devia para a vitima ? ')).lower( ).replace( 'ã' , 'a' )
-    if Quinta_pergunta == (str('sim')):
+   Quinta_pergunta =   str(input(' 5ª devia para a vitima ? ')).lower( ).replace( 'ã' , 'a' )
+   if Quinta_pergunta == (str('sim')):
         soma_s5 = (pontos_sim1 + 1)
         
-    elif Quinta_pergunta == (str('nao')):
+   elif Quinta_pergunta == (str('nao')):
        soma_n5 = (pontos_nao1 + 0)
        soma_s5 = (pontos_sim1 + 0)
         
-    else:
+   else:
        print('codigo invalido')
        soma_s5 = (pontos_sim1 + 0)
        
     
-    print ('Resultado do Interrogatorio')
-    soma_totals = ((soma_s1) + (soma_s2) + (soma_s3) + (soma_s4) + (soma_s5))
-    print (('Quantidades de respostas SIM : '), (soma_totals ))
+   print ('Resultado do Interrogatorio')
+   soma_totals = ((soma_s1) + (soma_s2) + (soma_s3) + (soma_s4) + (soma_s5))
+   print (('Quantidades de respostas SIM : '), (soma_totals ))
     
-    if soma_totals == (5):
+   if soma_totals == (5):
        print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a ASSASSINO/a.')
     
-    elif soma_totals == (4):
+   elif soma_totals == (4):
        print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a CUMPLICE.')
        
-    elif soma_totals == (3):
+   elif soma_totals == (3):
        print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a CUMPLICE.')
        
-    elif soma_totals == (2):
+   elif soma_totals == (2):
        print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela é o/a SUSPEITO/a, é necessario outras investigacoes.')
        
-    else:
-       print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela está LBERADO/a.')
+   else:
+      print('De acordo com a quantidade de resposta *SIM* a conclusao é que ele/ela está LBERADO/a.')
     
     
-    print('fim do {}ª Investigado'. format(p))
+   print('fim do {}ª Investigado'. format(p))
 
  
